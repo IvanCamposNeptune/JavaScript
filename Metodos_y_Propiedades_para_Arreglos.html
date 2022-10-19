@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos Avanzados</title>
+</head>
+<body>
+
+    <script>
+
+        var amigos = ["Ivan", "Ale", "Liz"];   
+        
+        //Propiedad Length - Saber longitud de arreglo
+        document.write("Tienes " + amigos.length + " Amigos" + "<br>"); //Propiedad para saber el tamaño del arreglo)
+
+        
+
+        //Para agregar uno al utimo elemento dinamicamente
+        amigos[amigos.length] = "Fer"; //Lo agrega en la posición 3, y el arreglo anterior va de 0, 1, 2
+        document.write(amigos+ "<br>");
+
+        //Otra forma de agregarlo al final es con push y es mejor
+        amigos.push("Luis", "Juan", "Donovan");
+        document.write(amigos+ "<br>");
+        
+        //Para eliminar el ultimo elemento es con pop
+        amigos.pop();
+        document.write(amigos+ "<br>");
+
+        //Concatenar arreglos
+        var amigos2 = ["Roberto", "Mara", "Aura"]; //arreglo a concatenar con el original
+
+        var amigos3 = amigos.concat(amigos2+ "<br>");
+        document.write(amigos3);
+
+        //Join une los elementos con un simbolo que queramos 
+        document.write(amigos.join(" - ") + "<br>");
+
+        //Ordenar elementos
+        var ordenados = amigos.sort();
+        document.write(ordenados);
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
