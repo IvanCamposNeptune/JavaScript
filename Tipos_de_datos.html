@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de datos</title>
+</head>
+<body>
+
+    <script>
+
+        //Tipos de datos
+
+        //Numerico - int/float
+        var edad = 19; //soporta entero y decimal. 
+
+        //String - Cadena de texto
+        var nombre = "Ivan";
+        var apellido = "Campos";
+        var texto = "Programador de \"JavaScript\" "; //Se usa barra invertida para que no tenga problemas para mostrar la comilla. 
+
+        document.write(nombre + " " + apellido + " " + texto);
+
+        //Array - Arreglo
+        var amigos = ["Alejandra" , "Bryan" , "Max", 24, true]; //Puede tener varios tipos de elementos. 
+        document.write(amigos[0] + " " + amigos[3]);
+
+        //Objet - Objeto
+
+        //Sirve para modificar las propiedades por ejemplo de un Slider
+        var Objeto = {
+            color: "Black",
+            size: 12
+        }
+
+        //Boolean - Boleano
+        var boleano = false;
+
+        //Undefined
+        var nose; //Esta indefinida esta variable, se puede comprobar en la consola escribiendo el nombre de la variable.
+
+        //Null
+        var numero2 = 10;
+        var numero2 = null; //aqui estamos sobreescribiendo la variable numero2 a null.
+
+        //NaN
+        var texto2 = "Hola que tal";
+        document.write(" " + texto2 * 2); //Esto es logicamente imposible, por lo que se muestra NaN para indicar el error.
+
+
+    </script>
+    
+</body>
+</html>
