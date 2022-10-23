@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+</head>
+<body>
+    
+    <script>
+
+        var nombre = "Ivan", edad = 19;
+
+
+        //Verificacion de Usuario
+        if (nombre == "Ivan"){
+            document.write("Bienvenido " + nombre);
+        }
+        else if (nombre == "Arturo"){
+            document.write("Acceso restringido");
+        }
+        else{
+            document.write("Bienvenido anonimo");
+        }
+
+        document.write("<br>");
+
+        //Verificacion de mayoria de edad
+        if(edad >= 18 && nombre == "Ivan"){
+            document.write("Bienvenido" + nombre +  " eres mayor de edad");
+        }
+        else{
+            document.write("No eres mayor de edad");
+        }
+
+
+        
+
+    </script>
+
+
+</body>
+</html>
